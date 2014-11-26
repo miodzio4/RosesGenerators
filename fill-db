@@ -1,0 +1,7 @@
+cp -r ../generators/rails4-sqlite-postgress/reference/db/ .
+rake db:setup
+git add .
+git commit -a -m "Filling database"
+sudo git push heroku master
+heroku run rake db:seed
+

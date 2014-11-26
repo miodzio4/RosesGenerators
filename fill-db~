@@ -1,0 +1,4 @@
+cp -r ../generators/rails4-sqlite-postgress/reference/db/ .
+rake db:setup
+heroku run rake db:seed
+

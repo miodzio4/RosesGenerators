@@ -34,7 +34,11 @@ rails generate formtastic:install
 #rails g nifty:layout
 #cp ../generators/rails3-postgress-postgress/reference/application.html.erb  app/views/layouts/
 
-rails generate scaffold Rose name:string description:string flower_color_id:integer flower_color_desc:string synonims:string milddew_imm_id:integer leaves_color:string leaf_spot_imm_id:integer fragrance_id:integer height_id:integer height_text:string freeze_imm_id:integer type_id:integer year:string origin:string ADR:boolean flower_shape:string cultivation:string remarks:string
+rails generate scaffold Rose name:string description:string flower_color_id:integer flower_color_desc:string synonims:string milddew_imm_id:integer leaves_color:string leaf_spot_imm_id:integer fragrance_id:integer height_id:integer height_text:string width:text freeze_imm_id:integer type_id:integer year:string origin:string adr:boolean flower_shape:string cultivation:string remarks:string
+
+#name:, :description, :flower_color_id,:flower_color_desc,:synonims,:milddew_imm_id,:leaves_color,:leaf_spot_imm_id,:fragrance_id,:height_id,:height_text, 
+#:freeze_imm_id,:type_id,:year,:origin, :ADR,:flower_shape, :cultivation, :remarks
+
 rails generate scaffold flower_color name:string description:string
 rails generate scaffold milddew_imm name:string description:string
 rails generate scaffold leaf_spot_imm name:string description:string
